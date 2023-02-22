@@ -918,10 +918,10 @@ ul {
     margin-right: 5%; }
   @media (max-width: 900px) {
     .col-1-of-3 {
-      width: 70%;
+      width: 100%;
       margin-right: 0%;
       margin-bottom: 10% !important;
-      transform: translateX(50%); } }
+       } }
 
 .fl {
   display: flex; }
