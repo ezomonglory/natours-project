@@ -1,0 +1,51 @@
+.u-center-text {
+    text-align: center;
+}
+
+.u-padding-8 {
+    padding-bottom: 6rem;
+
+    @media(max-width:900px) {
+        padding-bottom: 2rem;
+    }
+}
+
+// .h3-text-header {
+//     text-transform: uppercase;
+//     color: gray;
+//     margin-top: 3rem;
+//     margin-bottom: 3rem;
+//     font-size: 2rem;
+// }
+
+.m-1 {
+    margin: .5rem;
+    position: relative;
+
+    @media (max-width:900px)
+    {
+        margin-top: -10rem;
+    }
+}
+
+.h3-text-header-features {
+    text-transform: uppercase;
+    color: gray;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: .8rem;
+
+    
+    @media (max-width:500px) {
+        
+        font-size: 2rem;
+    
+    }
+
+    
+    @media (max-width:900px) {
+    
+        font-size: 1.7rem;
+    
+    }
+}

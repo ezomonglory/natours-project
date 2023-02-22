@@ -1,0 +1,234 @@
+.popup {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.582);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    // padding: 2rem;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &-close {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            position: absolute;
+            top: 2rem;
+            right: 3rem;
+            font-size: 3rem;
+            color: gray;
+            border-radius: 50%;
+            transition: all .1s;
+            display: inline-block;
+
+            &:hover,
+            &:active {
+                color: green;
+            }
+        }
+    }
+
+    &:target &-content {
+        opacity: 1;
+        transform: scale(1);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    
+    &-content {
+        background-color: white;
+        color: black;
+        width: 70%;
+
+        @media (min-width:1400px) {
+            width:80%;
+        }
+        @media (min-width:900px) and (max-width:1200px) {
+            width: 80%;
+        }
+
+        
+        @media (max-width:900px)
+        {   width: 85%;
+        
+        }
+
+        
+    @media (max-width:400px) {
+        width: 95%;
+    }
+
+    
+    
+    @media (min-width:400px) and (max-width:600px){
+    
+            width: 90%;
+        }
+
+    
+
+        margin: 0 auto;
+        transform:scale(.5) ;
+        opacity: 0;
+        z-index: 5500;
+        position: absolute;
+        top: 25%;
+        box-shadow: 0 2rem 4rem black;
+        border-radius: 1rem;
+        display: table;
+        overflow: hidden;
+        transition: all .3s .2s;
+
+    }
+
+    &-left {
+        width: 33.333333%;
+        display: table-cell;
+    }
+
+    &-right {
+        width: 66.6666667%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 2rem 5rem;
+    }
+
+    &-photo {
+        display: block;
+        width: 100%;
+        height: auto;
+        
+        
+    }
+
+    &-header {
+        text-transform: uppercase;
+        color: rgb(39, 211, 39);
+        display: inline-block;
+        font-size: 2rem;
+        transition: transform .2s;
+
+        
+    @media (max-width:400px) {
+        font-size: 2.2rem;
+    }
+
+    @media (max-width:350px) {
+        font-size: 1.8rem;
+    }
+    
+    
+    @media (min-width:400px) and(max-width:600px) {
+       font-size: 2.5rem;
+    }
+
+
+        &:hover {
+            transform: rotateX(25deg) rotateY(8deg)  scale(1.2);
+            text-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.575);
+                 
+        }
+
+    }
+
+    &-header-2 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+
+        @media (max-width:400px) {
+            font-size: 1rem;
+        }
+
+        @media (max-width:350px) {
+            font-size: .8rem;
+        }
+
+          
+    @media (min-width:400px) and (max-width:600px) {
+        font-size: 1.2rem;
+     }
+    }
+    
+
+    &-text {
+        // width:100%;
+        font-size:1rem;
+        margin-bottom: 2rem;
+        column-count: 2;
+        column-gap: 2rem;
+        column-rule: 1px solid rgb(185, 183, 183);
+
+        @media (max-width:400px) {
+            font-size: .8rem;
+        }
+
+        
+        @media (max-width:350px) {
+            font-size: .7rem;
+        }
+
+          
+    @media (min-width:400px) and (max-width:600px) {
+        font-size: .8rem;
+     }
+
+        
+        hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+
+
+        
+    }
+
+    &-btn {
+        color: white;
+        text-decoration: none;
+        font-size: .8rem;
+        text-transform: uppercase;
+        margin: 2rem auto;
+        
+        &-parent {
+            background-color: rgb(64, 235, 64);
+        // height: 5rem;
+        // width: 15rem;
+        padding: 1rem .5rem;
+        border-radius: 100rem;
+        text-align: center;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.336);
+        // padding-top: 1.2rem;
+        transition: all .3s;
+        
+
+        &:hover,
+        &:link,
+        &:visited {
+            transform: translateY(-.5rem);
+        }
+
+        &:active {
+            transform: translateY(.1rem);
+        }
+        }
+    }
+
+}

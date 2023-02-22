@@ -1,0 +1,225 @@
+
+  
+//   .header {
+//     height: 95vh;
+//     block-size: cover;
+//     background-position: top;
+//     background-size: cover;
+//     position: relative;
+//     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+//     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
+//     @media (max-width:900px)
+//     {
+//       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+//       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); 
+//     }
+//   background-image:linear-gradient(to right bottom,
+//    rgba($color-primary-light, 0.8),
+//    rgba($color-primary-dark, 0.8)),
+//   url(../img/heroo.png);
+//   width: 100%;
+
+//   @media (max-width:500px)
+//   {
+//     height: 120vh;
+//     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+//     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
+//   }
+
+//   @media (max-width:450px)
+//   {
+//     height: 80vh;
+//     -webkit-clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+//     clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%); 
+//   }
+
+//   @media (max-width:400px)
+//   {
+//     height: 60vh;
+//     -webkit-clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+//     clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%); 
+//   }
+  
+//     &__logo
+//   {
+//     position: absolute;
+//     top: 4rem;
+//     left: 4rem;
+//     height: 4rem;
+    
+//   }
+  
+//     &__text-box
+//   {
+//     position: absolute;
+//     left: 25%;
+//     top: 30%;
+//     text-align: center;
+//     margin-bottom: 2rem;
+
+//     @media (max-width: 1250px)
+//     {
+      
+//       width: 50%;
+//       height: 50%;
+    
+//      }
+
+//      @media (max-width: 400px)
+//     {
+      
+//       width: 50%;
+//       height: 50%;
+    
+//      }
+//   }
+
+  
+// }
+
+
+//E.G OWN
+
+.header {
+  // height: 95vh;
+  padding-bottom: 95vh;
+  background-image:linear-gradient(to right bottom,
+  rgba($color-primary-light, 0.8),
+  rgba($color-primary-dark, 0.8)),
+  url(../img/heroo.png);
+  width: 100%;
+  background-repeat: none;
+  background-size: cover;
+  transition: all .2s;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  @media (min-width:900px) and (max-width:1200px) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+}
+
+
+@media (max-width:900px) {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+    transform: scale(none) !important;
+  
+}
+
+  &__logo {
+    width:30%;
+    height: auto;
+
+    @media (max-width:400px) {
+      width: 20%;
+
+  }
+
+  @media (max-width:900px) {
+    width: 20%;
+}
+
+  
+  }
+
+  &__logobox {
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    left:2rem;
+
+    @media (max-width:900px) {
+      top: 2rem;
+
+  }
+
+  }
+
+  &__text-box {
+    width: 53%;
+    // background-color: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+
+    @media (min-width:1400px) {
+      width:60%;
+    }
+
+    @media (min-width:900px) and (max-width:1200px) {
+      width:60%;
+    }
+
+    @media (max-width:900px) {
+      width:90%;
+    }
+
+    @media (max-width:500px) {
+      width: 100%;
+      // font-size: 1.3rem !important;
+  
+  }
+  }
+}
+
+.primaryheading {
+  padding: 2px;
+  margin-bottom: 5rem;
+  &--maintext {
+    text-transform: uppercase;
+    color:white;
+    font-size: 3rem;
+    letter-spacing: 3rem;
+    animation-name:moveinleft;
+   animation-duration: 2s;
+
+   @media (max-width:900px) {
+    font-size: 5rem;
+
+}
+
+
+
+   @media (max-width:500px) {
+    font-size: 4rem;
+
+}
+
+
+    // @media (max-width:900px) {
+    //   letter-spacing: 1rem;
+    // }
+ }
+
+  &--subtext {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1.2rem;
+    animation-name: moveinright;
+    animation-duration: 2s; 
+
+    @media (max-width:900px) {
+      font-size: 2rem;
+  
+  }
+  
+  
+
+    @media (max-width:500px) {
+      font-size: 1.6rem;
+  
+  }
+
+    
+    // @media (max-width:900px) {
+    //   letter-spacing: 1rem;
+    // }
+  }
+}
+
+
+

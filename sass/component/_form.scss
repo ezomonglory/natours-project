@@ -1,0 +1,164 @@
+.form {
+    width: 100%;
+    height: auto;
+    background-color: red;
+    &-input {
+        font-size: 1rem;
+        width: 60%;
+       outline: none;
+       padding: 1rem;
+       color:black;
+       border: transparent;
+       margin-left: 10%;
+       display: inline-block;
+       transition: all.3s;
+
+       
+    @media (max-width:900px) {
+    
+      font-size: 1.1rem;
+  
+  }
+   
+       &:not(:first-child) {
+         margin-top: 3rem;
+       }
+   
+       &:focus {
+         outline: none;
+         border-bottom: .2rem solid green;
+         
+         &:invalid {
+             border-bottom: .2rem solid red;
+            }
+            
+        }
+
+        &:placeholder-shown + label {
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(-1rem);
+        }
+      }
+
+      &-label-input {
+        font-size: 1rem;
+        margin-left: 4rem;
+         margin-top: .1rem;
+         font-weight: 500;
+        display: block;
+        transition: all .3s;
+
+        
+    @media (max-width:900px) {
+    
+      font-size: 1.1rem;
+  
+  }
+     
+     }
+
+     &-radio-group {
+         width: 37%;
+         display: inline-block;
+         position: relative;
+         transition: all .2s;
+         margin-top: 1rem;
+         
+         &:first-child {
+             margin-left: 10%;
+         }
+
+    &:last-child {
+      @media (max-width:500px) {
+    
+        margin-left: -5%;
+    
+    }
+    }      
+   
+     }
+
+     &-label-radio {
+         font-size: 1rem;
+         cursor: pointer;
+         padding-left: 2.5rem;
+         margin-top: .5rem;
+
+         @media (max-width:900px) {
+    
+          font-size: 1.3rem;
+
+          margin-top:1rem;
+      
+      }
+
+ 
+         }
+         
+     }
+     
+
+
+.label-1 {
+    margin-bottom: 2.5rem;
+  }
+
+
+  .radio-button {
+      height: 2rem;
+      width: 2rem;
+      border: .3rem solid green;
+      border-radius: 50%;
+      display: inline-block;
+      position: absolute;
+      top: -7px;
+      left: 0;
+      transition: all .2s;
+      font-size: 1rem;
+
+      
+      @media (max-width:500px) {
+    
+        top: -1px
+    
+    }
+
+      
+      &::after {
+        content: "";
+        display: block;
+        height: 1rem;
+        width: 1rem;
+        background-color: green;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all .2s;
+          
+        }
+
+        
+    }
+
+    
+  
+
+  .radiobutton:checked ~ .radio-button::after {
+    opacity: 1;
+  }
+
+
+  .radiobutton {
+      height: 2rem;
+      width: 4rem;
+      color: green;
+      display: none;
+    }
+
+      
+      
+    

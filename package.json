@@ -1,0 +1,24 @@
+{
+	"name": "css",
+	"version": "1.0.0",
+	"description": "css learning",
+	"main": "index.js",
+	"scripts": {
+		"compile:sass": "node-sass sass/main.scss css/style.css -w",
+		"prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
+		"concat:css": "concat -o css/style.concat.css fonts/iconfonts.css css/style.css",
+		"compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed"
+	},
+	"author": "ezomon glory",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^10.4.2",
+		"node-sass": "^6.0.1"
+	},
+	"dependencies": {
+		"concat": "^1.0.3",
+		"postcss": "^8.4.5",
+    "nodemailer": "^6.7.2",
+		"postcss-cli": "^9.1.0"
+	}
+}

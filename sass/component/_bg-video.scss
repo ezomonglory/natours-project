@@ -1,0 +1,18 @@
+.bg-video {
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    opacity: .20;
+    width: 100%;
+    // padding-bottom: 20rem;
+    
+    @media (min-width:900px) and (max-width: 1200px) {
+
+    } 
+
+    &__content {
+        height: 150%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
